@@ -267,7 +267,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void Vector3MatrixTransform() //!
+        public void Vector3MatrixTransform() 
         {
             Matrix3 m3b = new Matrix3();
             m3b.SetRotateY(1.76f);
@@ -280,7 +280,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void Vector3MatrixTransform2() //!
+        public void Vector3MatrixTransform2() 
         {
             Matrix3 m3c = new Matrix3();
             m3c.SetRotateZ(9.62f);
@@ -293,7 +293,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void Vector4MatrixTransform() //!
+        public void Vector4MatrixTransform() 
         {
             Matrix4 m4b = new Matrix4();
             m4b.SetRotateY(-2.6f);
@@ -306,7 +306,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void Vector4MatrixTransform2() //!
+        public void Vector4MatrixTransform2() 
         {
             Matrix4 m4c = new Matrix4();
             m4c.SetRotateZ(0.72f);
@@ -319,7 +319,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void Matrix3Multiply() //!
+        public void Matrix3Multiply() 
         {
             Matrix3 m3a = new Matrix3();
             m3a.SetRotateX(3.98f);
@@ -334,7 +334,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void Matrix4Multiply() //!
+        public void Matrix4Multiply() 
         {
             Matrix4 m4b = new Matrix4();
             m4b.SetRotateY(-2.6f);
@@ -349,7 +349,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void Vector3MatrixTranslation() //!
+        public void Vector3MatrixTranslation() 
         {
             // homogeneous point translation
             Matrix3 m3b = new Matrix3(1, 0, 0,
@@ -364,7 +364,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void Vector3MatrixTranslation2() //!
+        public void Vector3MatrixTranslation2() 
         {
             // homogeneous point translation
             Matrix3 m3c = new Matrix3();
@@ -379,7 +379,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void Vector4MatrixTranslation() //!
+        public void Vector4MatrixTranslation() 
         {
             // homogeneous point translation
             Matrix4 m4b = new Matrix4(1, 0, 0, 0,
@@ -394,7 +394,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void Vector4MatrixTranslation2() //!
+        public void Vector4MatrixTranslation2() 
         {
             // homogeneous point translation
             Matrix4 m4c = new Matrix4();
@@ -408,7 +408,7 @@ namespace UnitTestProject
         }
         
         [TestMethod]
-        public void Vector3MatrixTranslation3() //!
+        public void Vector3MatrixTranslation3() 
         {
             // homogeneous point translation
             Matrix3 m3b = new Matrix3(1, 0, 0,
@@ -423,7 +423,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void Vector3MatrixTranslation4() //!
+        public void Vector3MatrixTranslation4() 
         {
             // homogeneous point translation
             Matrix3 m3c = new Matrix3();
@@ -438,7 +438,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void Vector4MatrixTranslation3() //!
+        public void Vector4MatrixTranslation3() 
         {
             // homogeneous point translation
             Matrix4 m4b = new Matrix4(1, 0, 0, 0,
@@ -453,7 +453,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void Vector4MatrixTranslation4() //!
+        public void Vector4MatrixTranslation4() 
         {
             // homogeneous point translation
             Matrix4 m4c = new Matrix4();

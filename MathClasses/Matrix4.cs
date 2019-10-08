@@ -14,10 +14,10 @@ namespace MathClasses
 
         public Matrix4(float M1, float M2, float M3, float M4, float M5, float M6, float M7, float M8, float M9, float M10, float M11, float M12, float M13, float M14, float M15, float M16)
         {
-            m1 = M1; m5 = M2; m9 = M3; m13 = M4;
-            m2 = M5; m6 = M6; m10 = M7; m14 = M8;
-            m3 = M9; m7 = M10; m11 = M11; m15 = M12;
-            m4 = M13; m8 = M14; m12 = M15; m16 = M16;
+            m1 = M1; m2 = M2; m3 = M3; m4 = M4;
+            m5 = M5; m6 = M6; m7 = M7; m8 = M8;
+            m9 = M9; m10 = M10; m11 = M11; m12 = M12;
+            m13 = M13; m14 = M14; m15 = M15; m16 = M16;
         }
 
         /// <summary>
@@ -92,7 +92,7 @@ namespace MathClasses
             Matrix4 m = new Matrix4(
             1, 0, 0, 0,
             0, (float)Math.Cos(radians), (float)Math.Sin(radians), 0,
-            0, (float)-Math.Sin(radians), (float)Math.Cos(radians), 0,
+            0, -(float)Math.Sin(radians), (float)Math.Cos(radians), 0,
             0, 0, 0, 1);
 
             Set(m);
@@ -108,7 +108,7 @@ namespace MathClasses
         public void SetRotateY(double radians)
         {
             Matrix4 m = new Matrix4(
-                (float)Math.Cos(radians), 0, (float)-Math.Sin(radians), 0,
+                (float)Math.Cos(radians), 0, -(float)Math.Sin(radians), 0,
                 0, 1, 0, 0,
                 (float)Math.Sin(radians), 0, (float)Math.Cos(radians), 0,
                 0, 0, 0, 1);
@@ -127,7 +127,7 @@ namespace MathClasses
         {
             Matrix4 m = new Matrix4(
                 (float)Math.Cos(radians), (float)Math.Sin(radians), 0, 0,
-                (float)-Math.Sin(radians), (float)Math.Cos(radians), 0, 0,
+                -(float)Math.Sin(radians), (float)Math.Cos(radians), 0, 0,
                 0, 0, 1, 0,
                 0, 0, 0, 1);
 
